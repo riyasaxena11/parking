@@ -1,0 +1,37 @@
+{{>header}}
+<title>Update Parking</title>
+{{>navbar}}
+<div class="container">
+    <h5 class="bg-secondary text-light text-center mt-2 p-2">Update Parking Details</h5>
+    <form class="mytable" action="/update/{{data._id}}" method="post">
+        <div class="row">
+            <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Car_Registration_number</label>
+            <input type="text" class="form-control" name="car_registration_number" placeholder="Ex: UP 38 AD 2343" />
+        </div>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Owner</label>
+            <input type="String" class="form-control" name="Owner" placeholder="Enter Owner name" />
+        </div>
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control" id="Date" name="Date" required />
+        </div>
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Arrival Time:</label>
+            <input type="time" class="form-control" id="Arrival" name="Arrival" required />
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Departure Time:</label>
+            <input type="time" class="form-control" id="Departure" name="Departure" required />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Submit</button>
+    </form>
+
+
+</div>
+{{>footer}}

@@ -1,0 +1,47 @@
+{{>header}}
+<title>Add Vehicle</title>
+{{>navbar}}
+<div class="container">
+    <h5 class="bg-secondary text-light text-center mt-2 p-2">Add Vehicle</h5>
+    <form class="mytable" action="/add" method="post">
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Car_Registration_number</label>
+            <input type="text" class="form-control" name="Car_registration_number" placeholder="Ex: UP 38 AD 2343" />
+        </div>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Owner</label>
+            <input type="text" class="form-control" name="Owner" placeholder="Enter Owner name" />
+        </div>
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control" id="Date" name="Date" required />
+        </div>
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Arrival Time:</label>
+            <input type="time" class="form-control" id="Arrival" name="Arrival" required />
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Departure Time:</label>
+            <input type="time" class="form-control" id="Departure" name="Departure" required />
+          </div>
+    
+        </div>
+        <button type="submit" class="btn btn-primary w-100" onclick="showConfirmation()">Add</button>
+    </form>
+
+
+</div>
+{{>footer}}
+<script>
+    function showConfirmation() {
+    // Display a confirmation alert
+        var confirmMessage = "Are you sure to add new vehicle";
+        alert(confirmMessage);
+}
+
+
+</script>

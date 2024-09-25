@@ -1,0 +1,24 @@
+{
+  "name": "park4u",
+  "version": "1.0.0",
+  "description": "a parking management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GovindSharma-392/Park4U.git"
+  },
+  "author": "govind sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GovindSharma-392/Park4U/issues"
+  },
+  "homepage": "https://github.com/GovindSharma-392/Park4U#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.0.1"
+  }
+}
